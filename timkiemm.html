@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm kiếm</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    
+        body{
+            background-image: url(img/anhdn&dk.jpg);
+            background-size: cover;
+            background-position-y: -80px;
+            font-size: 16px;
+        }
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#search-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+    width: 200px;
+}
+
+button[type="submit"] {
+    padding: 8px 16px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+        </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Tìm kiếm</h1>
+    <form id="search-form" action="/search.php" method="GET">
+        <input type="text" id="search-input" name="q" placeholder="Nhập từ khóa...">
+        <button type="submit">Tìm kiếm</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
